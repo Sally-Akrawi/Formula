@@ -1,0 +1,29 @@
+﻿@page
+@model Assignment1.Pages.FormulaModel
+@{
+}
+
+<form method="post">
+    <label>Principal:</label>
+    <input asp-for="Principal" type="text" />
+    <br />
+    <br />
+    <label>Interest Rate:</label>
+    <input asp-for="InterestRate" type="text" />
+    <br />
+    <br />
+    <label>Time applied per period:</label>
+    <input asp-for="Time" type="text" />
+    <br />
+    <br />
+    <label>Number of periods:</label>
+    <input asp-for="NumberOfPeriods" type="text" />
+    <br />
+    <br />
+    <input type="submit" value="Go!"/>
+
+</form>
+<br /> 
+
+<h3>Final Amount:</h3>
+<p>@Model.A</p>
